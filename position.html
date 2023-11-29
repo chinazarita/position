@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        p{
+            position:static
+        }
+        .box-holder{
+            width: 100%;
+            position: relative;
+        }
+        .box1{
+            width: 48%;
+            min-height: 400px;
+            position: absolute;
+            left: 0px;
+            background-color: aquamarine;
+        }
+        .box2{
+            width: 48%;
+            min-height: 400px;
+            background-color: palegreen;
+            position: absolute;
+            right: 0px;
+        
+        }
+        h2{
+            border: 3px solid red;
+            width: 10%;
+            clear: both;
+            position: fixed;
+            bottom: 20px;
+            right: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem illo, eveniet nemo autem amet, expedita ut corrupti numquam, 
+        provident perferendis tempore quam dolorum quia aliquid eum ex ipsam? Voluptate, explicabo.
+    </p>
+    <div class="box-holder">
+        <div class="box1">to right</div>
+        <div class="box2">to left</div>
+    </div>
+</br>
+    <h2>fixed</h2>
+    <div style="height: 900px;"></div>
+</body>
+</html>
